@@ -2,7 +2,7 @@
 
 
 <ul>
-    <li>
-
+    <li *ngFor="let result of _searchservice.results">
+        {{result.name}}
     </li>
 </ul>

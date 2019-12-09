@@ -8,7 +8,7 @@ import { SearchServiceService } from '../search-service.service';
 })
 export class ResultsComponent implements OnInit {
 
-  //constructor(private _searchservice: SearchServiceService) { }
+  constructor(private _searchservice: SearchServiceService) { }
 
   ngOnInit() {
   }
