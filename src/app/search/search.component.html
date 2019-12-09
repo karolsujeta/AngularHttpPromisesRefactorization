@@ -5,7 +5,11 @@
         <input class="search" #search>
     </div>
 
-    <div class=buttonfield>
+    <div class="buttonfield">
         <button (click)="doSearch(search.value)" class="submit" type="submit">Wyszukaj</button>
     </div>
+
+    <div class="text-center">
+            <p *ngIf="loading">Loading...</p>
+          </div>
 </div>

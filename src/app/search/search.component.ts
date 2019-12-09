@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SearchServiceService } from '../search-service.service';
 
 @Component({
   selector: 'app-search',
@@ -7,12 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  private loading: boolean = false;
+  constructor(private _searchservice: SearchServiceService) { }
 
   ngOnInit() {
   }
 
-  doSearch(music){
-    //console.log(music);
+  doSearch(term: string) {
+    //console.log(term);
+    this.loading = true;
+    this._searchservice.search(term).then(() => this.loading = false);
   }
+
 }
