@@ -1,0 +1,15 @@
+h1{
+    font-size: 30px;
+    color:#ffffff;
+    text-align: center;
+}
+
+.list-group-item{
+    color: #ffffff;
+    list-style-type: none;
+    display: inline;
+}
+
+.list-group{
+    text-align: center;
+}

@@ -1,8 +1,11 @@
 <h1>Wyniki wyszukiwania:</h1>
 
-
-<ul>
-    <li *ngFor="let result of _searchservice.results">
-        {{result.name}}
-    </li>
-</ul>
+<div class="results">
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let track of _searchservice.results">
+            <img src="{{track.thumbnail}}">
+            <a target="_blank" href="{{track.link}}">{{ track.track }}
+            </a>
+        </li>
+    </ul>
+</div>
