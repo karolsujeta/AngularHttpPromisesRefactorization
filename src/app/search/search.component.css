@@ -1,0 +1,17 @@
+.search{
+    height: 30px;
+    width: 200px;
+    background-color: #ebebeb;
+}
+
+.submit{
+    height: 25px;
+    width: 100px;
+    font-size: 15px;
+    background-color: #ebebeb;
+    margin-top: 2px;
+}
+
+h1{
+    font-size: 30px;
+}
